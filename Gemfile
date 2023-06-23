@@ -10,10 +10,10 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.3"
 gem "sprockets-rails"
 
 # Use pg as the database for Active Record
-gem "pg", "~> 1.1"
+gem "pg", "~> 1.5.3"
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem "puma", "~> 5.0"
+gem "puma", "~> 5.6.5"
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
@@ -74,3 +74,7 @@ end
 gem "devise", "~> 4.9"
 
 gem "tailwindcss-rails", "~> 2.0"
+
+gem "msgpack", "~> 1.7.1"
+gem "bindex", "~> 0.8.1"
+gem "bcrypt", "~>3.1.18"
