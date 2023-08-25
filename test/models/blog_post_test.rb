@@ -2,7 +2,6 @@ require "test_helper"
 
 class BlogPostTest < ActiveSupport::TestCase
    test "draft? returns true for draft blog post" do
-    binding.irb
      assert blog_posts(:draft).draft?
    end
 
