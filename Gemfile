@@ -46,7 +46,7 @@ gem "bootsnap", require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -78,3 +78,4 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "msgpack", "~> 1.7.1"
 gem "bindex", "~> 0.8.1"
 gem "bcrypt", "~>3.1.18"
+gem "aws-sdk-s3", require: false
