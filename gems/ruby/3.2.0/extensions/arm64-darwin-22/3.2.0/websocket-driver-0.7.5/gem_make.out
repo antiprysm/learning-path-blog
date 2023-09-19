@@ -1,18 +1,18 @@
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-/Users/cselvais/.rbenv/versions/3.2.0/bin/ruby -I /Users/cselvais/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/cselvais/.rbenv/versions/3.2.2/bin/ruby extconf.rb
 creating Makefile
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-2yhl5u sitelibdir\=./.gem.20230619-75713-2yhl5u clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-w766aw sitelibdir\=./.gem.20230912-53449-w766aw clean
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-2yhl5u sitelibdir\=./.gem.20230619-75713-2yhl5u
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-w766aw sitelibdir\=./.gem.20230912-53449-w766aw
 compiling websocket_mask.c
 linking shared-object websocket_mask.bundle
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-2yhl5u sitelibdir\=./.gem.20230619-75713-2yhl5u install
-/opt/homebrew/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20230619-75713-2yhl5u
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-w766aw sitelibdir\=./.gem.20230912-53449-w766aw install
+/opt/homebrew/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20230912-53449-w766aw
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-2yhl5u sitelibdir\=./.gem.20230619-75713-2yhl5u clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-w766aw sitelibdir\=./.gem.20230912-53449-w766aw clean
