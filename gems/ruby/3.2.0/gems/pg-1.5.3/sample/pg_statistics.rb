@@ -137,7 +137,7 @@ def parse_args( args )
 	options          = OpenStruct.new
 	options.database = Etc.getpwuid( Process.uid ).name
 	options.host     = '127.0.0.1'
-	options.port     = 3000
+	options.port     = 5432
 	options.user     = Etc.getpwuid( Process.uid ).name
 	options.sslmode  = 'disable'
 	options.interval = 5

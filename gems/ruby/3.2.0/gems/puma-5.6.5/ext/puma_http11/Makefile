@@ -13,12 +13,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/cselvais/.rbenv/versions/3.2.0/include/ruby-3.2.0
+topdir = /Users/cselvais/.rbenv/versions/3.2.2/include/ruby-3.2.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/cselvais/.rbenv/versions/3.2.0/include/ruby-3.2.0/arm64-darwin22
+arch_hdrdir = /Users/cselvais/.rbenv/versions/3.2.2/include/ruby-3.2.0/arm64-darwin22
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/cselvais/.rbenv/versions/3.2.0
+prefix = $(DESTDIR)/Users/cselvais/.rbenv/versions/3.2.2
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -88,10 +88,10 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_RANDOM_BYTES -I/opt/homebrew/opt/openssl@1.1/include -I/Users/cselvais/.rbenv/versions/3.2.0/include  -I/opt/homebrew/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_OPENSSL_BIO_H -DHAVE_DTLS_METHOD -DHAVE_TLS_SERVER_METHOD -DHAVE_SSL_CTX_SET_MIN_PROTO_VERSION -DHAVE_X509_STORE_UP_REF -DHAVE_SSL_CTX_SET_ECDH_AUTO -DHAVE_SSL_CTX_SET_DH_AUTO -DHAVE_SSL_GET1_PEER_CERTIFICATE -DHAVE_RANDOM_BYTES -I/Users/cselvais/.rbenv/versions/3.2.2/openssl/include -I/Users/cselvais/.rbenv/versions/3.2.2/include  -I/opt/homebrew/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) -fdeclspec $(ARCH_FLAG)
-ldflags  = -L. -L/Users/cselvais/.rbenv/versions/3.2.0/lib  -fstack-protector-strong -L/opt/homebrew/opt/gmp/lib
-dldflags = -L/Users/cselvais/.rbenv/versions/3.2.0/lib  -L/opt/homebrew/opt/gmp/lib -Wl,-multiply_defined,suppress -Wl,-undefined,dynamic_lookup $(LIBRUBYARG_SHARED)
+ldflags  = -L. -L/Users/cselvais/.rbenv/versions/3.2.2/lib  -fstack-protector-strong -L/opt/homebrew/opt/gmp/lib
+dldflags = -L/Users/cselvais/.rbenv/versions/3.2.2/lib  -L/opt/homebrew/opt/gmp/lib -Wl,-multiply_defined,suppress -Wl,-undefined,dynamic_lookup $(LIBRUBYARG_SHARED)
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -127,8 +127,8 @@ TOUCH = exit >
 #### End of system configuration section. ####
 
 preload = 
-libpath = . $(libdir) /opt/homebrew/opt/openssl@1.1/lib
-LIBPATH =  -L. -L$(libdir) -L/opt/homebrew/opt/openssl@1.1/lib
+libpath = . $(libdir) /Users/cselvais/.rbenv/versions/3.2.2/openssl/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/cselvais/.rbenv/versions/3.2.2/openssl/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log

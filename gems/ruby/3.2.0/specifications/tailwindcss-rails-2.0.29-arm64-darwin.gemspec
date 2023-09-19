@@ -17,10 +17,10 @@ Gem::Specification.new do |s|
   s.files = ["exe/tailwindcss".freeze]
   s.homepage = "https://github.com/rails/tailwindcss-rails".freeze
   s.licenses = ["MIT".freeze]
-  s.rubygems_version = "3.4.1".freeze
+  s.rubygems_version = "3.4.19".freeze
   s.summary = "Integrate Tailwind CSS with the asset pipeline in Rails.".freeze
 
-  s.installed_by_version = "3.4.1" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.19" if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

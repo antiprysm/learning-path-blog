@@ -1,5 +1,5 @@
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/nio4r-2.5.9/ext/nio4r
-/Users/cselvais/.rbenv/versions/3.2.0/bin/ruby -I /Users/cselvais/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/cselvais/.rbenv/versions/3.2.2/bin/ruby extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -13,10 +13,10 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/nio4r-2.5.9/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-t394xb sitelibdir\=./.gem.20230619-75713-t394xb clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-rsc533 sitelibdir\=./.gem.20230912-53449-rsc533 clean
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/nio4r-2.5.9/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-t394xb sitelibdir\=./.gem.20230619-75713-t394xb
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-rsc533 sitelibdir\=./.gem.20230912-53449-rsc533
 compiling bytebuffer.c
 bytebuffer.c:308:20: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
     return INT2NUM(bytes_read);
@@ -373,8 +373,8 @@ compiling selector.c
 linking shared-object nio4r_ext.bundle
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/nio4r-2.5.9/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-t394xb sitelibdir\=./.gem.20230619-75713-t394xb install
-/opt/homebrew/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20230619-75713-t394xb
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-rsc533 sitelibdir\=./.gem.20230912-53449-rsc533 install
+/opt/homebrew/bin/ginstall -c -m 0755 nio4r_ext.bundle ./.gem.20230912-53449-rsc533
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/nio4r-2.5.9/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-t394xb sitelibdir\=./.gem.20230619-75713-t394xb clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-rsc533 sitelibdir\=./.gem.20230912-53449-rsc533 clean

@@ -13,12 +13,12 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/cselvais/.rbenv/versions/3.2.0/include/ruby-3.2.0
+topdir = /Users/cselvais/.rbenv/versions/3.2.2/include/ruby-3.2.0
 hdrdir = $(topdir)
-arch_hdrdir = /Users/cselvais/.rbenv/versions/3.2.0/include/ruby-3.2.0/arm64-darwin22
+arch_hdrdir = /Users/cselvais/.rbenv/versions/3.2.2/include/ruby-3.2.0/arm64-darwin22
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/cselvais/.rbenv/versions/3.2.0
+prefix = $(DESTDIR)/Users/cselvais/.rbenv/versions/3.2.2
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -88,10 +88,10 @@ CCDLFLAGS = -fno-common
 CFLAGS   = $(CCDLFLAGS) $(cflags)  -fno-common -pipe -O3  -std=c99 $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS =  -I/Users/cselvais/.rbenv/versions/3.2.0/include  -I/opt/homebrew/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CPPFLAGS =  -I/Users/cselvais/.rbenv/versions/3.2.2/include  -I/opt/homebrew/opt/gmp/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
 CXXFLAGS = $(CCDLFLAGS) -fdeclspec $(ARCH_FLAG)
-ldflags  = -L. -L/Users/cselvais/.rbenv/versions/3.2.0/lib  -fstack-protector-strong -L/opt/homebrew/opt/gmp/lib
-dldflags = -L/Users/cselvais/.rbenv/versions/3.2.0/lib  -L/opt/homebrew/opt/gmp/lib -Wl,-multiply_defined,suppress -Wl,-undefined,dynamic_lookup $(LIBRUBYARG_SHARED)
+ldflags  = -L. -L/Users/cselvais/.rbenv/versions/3.2.2/lib  -fstack-protector-strong -L/opt/homebrew/opt/gmp/lib
+dldflags = -L/Users/cselvais/.rbenv/versions/3.2.2/lib  -L/opt/homebrew/opt/gmp/lib -Wl,-multiply_defined,suppress -Wl,-undefined,dynamic_lookup $(LIBRUBYARG_SHARED)
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle

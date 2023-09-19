@@ -97,7 +97,7 @@ module Rails
       # querying them from the Rack::Handler registry.
       RACK_SERVERS = %w(cgi fastcgi webrick lsws scgi thin puma unicorn falcon)
 
-      DEFAULT_PORT = 5432
+      DEFAULT_PORT = 3000
       DEFAULT_PIDFILE = "tmp/pids/server.pid"
 
       class_option :port, aliases: "-p", type: :numeric,

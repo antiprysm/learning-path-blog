@@ -1,5 +1,5 @@
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-/Users/cselvais/.rbenv/versions/3.2.0/bin/ruby -I /Users/cselvais/.rbenv/versions/3.2.0/lib/ruby/3.2.0 extconf.rb
+/Users/cselvais/.rbenv/versions/3.2.2/bin/ruby extconf.rb
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
@@ -9,23 +9,23 @@ checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
 checking for X509_STORE_up_ref()... yes
 checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
 checking for SSL_CTX_set_dh_auto(NULL, 0) in openssl/ssl.h... yes
-checking for SSL_get1_peer_certificate() in openssl/ssl.h... no
+checking for SSL_get1_peer_certificate() in openssl/ssl.h... yes
 checking for Random.bytes... yes
 creating Makefile
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-pj63ak sitelibdir\=./.gem.20230619-75713-pj63ak clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-fsx9eg sitelibdir\=./.gem.20230912-53449-fsx9eg clean
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-pj63ak sitelibdir\=./.gem.20230619-75713-pj63ak
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-fsx9eg sitelibdir\=./.gem.20230912-53449-fsx9eg
 compiling http11_parser.c
 compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-pj63ak sitelibdir\=./.gem.20230619-75713-pj63ak install
-/opt/homebrew/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20230619-75713-pj63ak/puma
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-fsx9eg sitelibdir\=./.gem.20230912-53449-fsx9eg install
+/opt/homebrew/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20230912-53449-fsx9eg/puma
 
 current directory: /Users/cselvais/Documents/rubyApps/blog/gems/ruby/3.2.0/gems/puma-5.6.5/ext/puma_http11
-make DESTDIR\= sitearchdir\=./.gem.20230619-75713-pj63ak sitelibdir\=./.gem.20230619-75713-pj63ak clean
+make DESTDIR\= sitearchdir\=./.gem.20230912-53449-fsx9eg sitelibdir\=./.gem.20230912-53449-fsx9eg clean
