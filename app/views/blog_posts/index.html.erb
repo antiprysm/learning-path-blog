@@ -12,6 +12,8 @@
 </div>
 <% end %>
 
+<% if @pagy.count > @pagy.items %>
 <div class="mb-16" style="margin-top: 4rem" >
     <%== pagy_nav(@pagy) %>
 </div>
+<% end %>
